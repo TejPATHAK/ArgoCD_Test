@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: tpweb
+  name: tpweb
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: tpweb
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: tpweb
+    spec:
+      containers:
+      - image: tpathak21/tejaswi_web
+        name: tejaswi-web-kqjbz
+        resources: {}
+status: {}
